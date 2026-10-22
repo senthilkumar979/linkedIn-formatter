@@ -23,9 +23,7 @@ export const LinkedInPreview = ({ converted }: LinkedInPreviewProps) => {
         <p className="text-[11px] font-semibold tracking-[0.16em] text-[var(--teal)] uppercase">
           Live preview
         </p>
-        <h2 className="mt-0.5 font-[family-name:var(--font-display)] text-xl font-bold tracking-tight">
-          LinkedIn feed
-        </h2>
+        <h2 className="mt-0.5 text-xl font-semibold tracking-tight">LinkedIn feed</h2>
         <p className="mt-1 text-xs text-[var(--text-muted)]">
           Matches spacing and styles after you paste
         </p>

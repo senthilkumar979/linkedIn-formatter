@@ -19,18 +19,20 @@ export const App = () => {
 
   return (
     <div className="mx-auto flex min-h-screen max-w-[1400px] flex-col px-4 pb-24 pt-8 md:px-8 md:pb-10 md:pt-10">
-      <header className="rise-in mb-8 flex flex-col gap-6 lg:mb-10 lg:flex-row lg:items-end lg:justify-between">
+      <header className="mb-8 flex flex-col gap-6 lg:mb-10 lg:flex-row lg:items-end lg:justify-between">
         <div className="max-w-2xl">
-          <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--bg-elevated)]/80 px-3 py-1 text-[11px] font-medium tracking-[0.14em] text-[var(--text-muted)] uppercase backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-[var(--accent-bright)] shadow-[0_0_10px_var(--accent-bright)]" />
-            PostForm
-          </div>
-          <h1 className="font-[family-name:var(--font-display)] text-4xl leading-[1.1] font-extrabold tracking-tight text-[var(--text)] md:text-5xl">
-            LinkedIn Post Formatter
+          <h1 className="flex items-center gap-3 text-[var(--text)]">
+            <span
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--accent)] text-sm font-semibold tracking-wide text-white md:h-11 md:w-11"
+              aria-hidden
+            >
+              Pf
+            </span>
+            <span className="text-3xl font-semibold tracking-[-0.03em] md:text-4xl">PostForm</span>
           </h1>
-          <p className="mt-4 max-w-lg text-base leading-relaxed text-[var(--text-muted)] md:text-[1.05rem]">
-            Paste AI Markdown on the left. Get LinkedIn-ready Unicode with real paragraph spacing —
-            preview it, copy it, post it.
+          <p className="mt-4 max-w-lg text-[0.95rem] leading-relaxed text-[var(--text-muted)] md:text-base">
+            Free LinkedIn text formatter — turn ChatGPT or Gemini Markdown into bold, italic, and
+            mono that pastes cleanly into LinkedIn.
           </p>
         </div>
 
@@ -51,7 +53,7 @@ export const App = () => {
         </button>
       </header>
 
-      <main className="rise-in-delay grid min-h-0 flex-1 gap-5 lg:grid-cols-2 lg:gap-6">
+      <main className="grid min-h-0 flex-1 gap-5 lg:grid-cols-2 lg:gap-6">
         <EditorPane
           value={source}
           converted={converted}

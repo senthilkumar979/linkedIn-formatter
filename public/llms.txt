@@ -1,0 +1,43 @@
+# PostForm
+
+> Free LinkedIn text formatter. Convert ChatGPT or Gemini Markdown into LinkedIn-ready Unicode bold, italic, and monospace — with live preview and paste-safe paragraph spacing.
+
+PostForm runs entirely in the browser. No account. No upload. No API keys.
+
+## Product
+
+- Name: PostForm
+- Category: LinkedIn text formatter / Unicode font generator for social posts
+- URL: /
+
+## What it does
+
+LinkedIn posts do not support Markdown or rich text. Asterisks from AI drafts show as literal characters. PostForm converts:
+
+- `**bold**` / `__bold__` → Mathematical Sans-Serif Bold Unicode
+- `*italic*` / `_italic_` → Mathematical Sans-Serif Italic Unicode
+- `` `code` `` → Mathematical Monospace Unicode
+
+It also preserves blank lines when pasting into LinkedIn (empty lines are collapsed by LinkedIn unless padded with an invisible spacer).
+
+## Features
+
+- Side-by-side Markdown editor and LinkedIn-style feed preview
+- Style toolbar: bold, italic, bold italic, mono, script, small caps, strikethrough
+- Insert: horizontal divider, code, bullet, check, arrow
+- Keyboard shortcuts (Cmd/Ctrl+B, I, E, Shift+X, Shift+H, backtick, …)
+- UTF-16 character counter against LinkedIn’s ~3,000 limit
+- Copy for LinkedIn button
+
+## Who it is for
+
+Creators, engineers, and marketers who draft LinkedIn posts in ChatGPT, Gemini, or other AI tools and need formatting that survives paste into the LinkedIn composer.
+
+## Privacy
+
+All conversion happens client-side. Content is not sent to a server.
+
+## Optional
+
+- [robots.txt](/robots.txt)
+- [ai.txt](/ai.txt)
